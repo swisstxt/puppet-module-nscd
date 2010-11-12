@@ -2,8 +2,9 @@
 # nscd module
 #
 # Copyright 2008, Puzzle ITC GmbH
+# Copyright 2010, Atizo AG
 # Marcel Härry haerry+puppet(at)puzzle.ch
-# Simon Josi josi+puppet(at)puzzle.ch
+# Simon Josi simon.josi+puppet(at)atizo.com
 #
 # This program is free software; you can redistribute 
 # it and/or modify it under the terms of the GNU 
@@ -11,21 +12,14 @@
 # the Free Software Foundation.
 #
 
-# modules_dir { "nscd": }
-
 class nscd {
-    include nscd::base
-}
-
-class nscd::base {
-    package{nscd:
-        ensure => present,
-    }
-
-    service{nscd:
-        ensure => running,
-        enable => true,
-        hasstatus => true,
-        require => Package[nscd],
-    }
+  package{'nscd':
+    ensure => present,
+  }
+  service{'nscd':
+    ensure => running,
+    enable => true,
+    hasstatus => true,
+    require => Package['nscd'],
+  }
 }
