@@ -3,8 +3,9 @@
 #
 # Copyright 2008, Puzzle ITC GmbH
 # Copyright 2010, Atizo AG
+# Copyright 2013, SWISS TXT
 # Marcel Härry haerry+puppet(at)puzzle.ch
-# Simon Josi simon.josi+puppet(at)atizo.com
+# Simon Josi me(at)yokto(dot)net
 #
 # This program is free software; you can redistribute 
 # it and/or modify it under the terms of the GNU 
